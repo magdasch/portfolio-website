@@ -8,7 +8,7 @@ Ghost White: #F8F8FF;
 */
 body{
 background-color: white;
-font-family:PT Sans, sans-serif;
+font-family:PT Serif Caption, serif;
 font-size: 16px; /* Sets the font size to 16px*/
 font-weight: 400; /* Sets the font weight to 300*/
 line-height: normal; /* Sets the line-height to normal*/
@@ -32,6 +32,9 @@ h3{
 h4{
   font-size: 1.5em;
   font-weight: 400;
+}
+.headline-header{
+  font-family: PT Sans, sans-sans-serif;
 }
 img{
   with: 100%;
