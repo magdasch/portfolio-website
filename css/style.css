@@ -14,9 +14,15 @@ font-weight: 400; /* Sets the font weight to 300*/
 line-height: normal; /* Sets the line-height to normal*/
 color: #0D0D0D;
 }
-h1,h2,h3,h4 {
+
+h1,h2,h3,h4{
   line-height: normal;
 }
+
+.headline-header{
+  font-family: PT Sans, sans-serif;
+}
+
 h1{
   font-size: 4em;
   font-weight: 700;
@@ -30,11 +36,8 @@ h3{
   font-weight: 400;
 }
 h4{
-  font-size: 1.5em;
-  font-weight: 400;
-}
-.headline-header{
-  font-family: PT Sans, sans-sans-serif;
+  font-size: 1em;
+  font-weight: 700;
 }
 img{
   with: 100%;
