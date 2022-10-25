@@ -6,6 +6,57 @@ Dark BLue: #2E5170;
 Pink: #E34072;
 Ghost White: #F8F8FF;
 */
+*{
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #F8F8FF;
+  text-align: center;
+  padding: 10px 0;
+  position:fixed; width: 100%;
+  box-shadow:7px 7px 5px 0px rgba(0, 0, 0, 0.16);
+}
+.logo{
+  max-width: 250px;
+}
+nav > ul{
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li{
+  display: inline-block;
+  }
+nav > ul > li > a{
+  padding: 0 15 px;
+  font-family: PT Sans, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #0D0D0D;
+  text-decoration: none; /*no unterlining*/
+}
+nav > ul > li > a:visited{
+  color: #0D0D0D;
+}
+
+nav > ul > li > a:hover{
+  color: #80A2BF;
+  text-decoration: none;
+}
+nav > ul > li > a:active{
+  color: #56738C;
+  text-decoration: none;
+}
+main{
+  padding-top: 290.8px;
+}
+#hero{
+  background-color: #F8F8FF;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  }
+
 body{
 background-color: white;
 font-family:PT Serif Caption, serif;
@@ -21,6 +72,9 @@ h1,h2,h3,h4{
 
 .headline-header{
   font-family: PT Sans, sans-serif;
+}
+.headline-header-2{
+    text-align: center;
 }
 
 h1{
@@ -40,11 +94,11 @@ h4{
   font-weight: 700;
 }
 img{
-  with: 100%;
+  width: 100%;
 }
 a{
   color:#0D0D0D;
-  text-decoration: non; /*no unterlining*/
+  text-decoration: none; /*no unterlining*/
 }
 a:visited{
   color: #0D0D0D;
@@ -60,7 +114,7 @@ a:active{
 .button{
   display:inline-block;
   background-color: #56738C;
-  color: #F8F8FF;
+  color: white;
   font-weight: 400;
   text-transform: uppercase;
   padding: 10px;
@@ -80,8 +134,26 @@ a:active{
   color:#80A2BF;
   text-transform: uppercase;
   border:2px solid #2E5170;
+  margin-bottom: 10px;
 }
 .button.contact:hover{
   background-color:#80A2BF;
   color:#F8F8FF;
+}
+
+/* Layout styling*/
+.container {
+  padding: 0 15px; /*0 px top and bottom, 15px left and right*/
+}
+.row{
+  margin: 25px 0; /*25px top and bottom, 0 left and right*/
+}
+#work .row{
+  padding-bottom: 25px; border-bottom: 1px solid #2E5170;
+}
+#hero h1{
+  text-align:center; /*Centers text*/
+}
+.social-media{
+    max-width: 40px;
 }
