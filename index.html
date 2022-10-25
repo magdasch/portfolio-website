@@ -7,15 +7,15 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel=stylesheet>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <meta name="viewport" content="with=device-with, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
   <header>
-    <div>
-      <img src="img/logo_150x150.png" alt="Magdalena Schindler">
+    <div class="container">
+      <img class="logo" src="img/logo_150x150.png" alt="Logo Magdalena Schindler">
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="olive.html"target="_blank">Work</a></li>
           <li><a href="about.html"target="_blank">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -24,20 +24,20 @@
     </div>
   </header>
   <main>
-    <div>
-      <div>
+    <div id="hero"><!-- start hero section -->
+      <div class="container"><!-- start container holding hero -->
         <h1 class="headline-header">Nice to meet you!</h1>
-          <br><span>My name is Magda Schindler, I'm a UX Designer based in Graz</span>
-          <p>I aim to improve the digital world from the user's point of view by using my solution-oriented approach and my user-centered mindset. My superpower is my empathy, which allows me to identify deep-seated reasons behind objections.</p>
-        </div>
-    </div>
-    <div>
-      <div>
+          <h2 class="headline-header-2">My name is Magda Schindler, I'm a UX Designer based in Graz</h2>
+          <p class="headline-header-2">I aim to improve the digital world from the user's point of view by using my solution-oriented approach and my user-centered mindset. My superpower is my empathy, which allows me to identify deep-seated reasons behind objections.</p>
+        </div><!-- end container holding hero -->
+    </div><!-- end hero section -->
+    <div id="work"><!-- work section -->
+      <div class="container"><!-- start container -->
         <h2>My work</h2>
-        <div><!-- open row with (2) columns for project1 -->
+        <div class="row"><!-- open row with (2) columns for project1 -->
           <div><!-- open first column (image) -->
             <picture>
-              <source srcset="img/olive/Olive_hero pic@1.png" media=" (max-with:767px)">
+              <source srcset="img/olive/Olive_hero pic@1.png" media=" (max-width:767px)">
               <img src="img/olive/Olive_hero pic@2.png" alt="Olive Wellbeing App">
             </picture>
           </div><!-- end first column -->
@@ -46,13 +46,13 @@
             <p><!-- open paragraph -->
               Olive helps health-conscious people develop healthier habits while allowing them flexibility.
             </p><!-- end paragraph -->
-            <a href="#" class="button">Read more</a><!-- button -->
+            <a href="olive.html" class="button">Read more</a><!-- button -->
           </div><!-- end second column -->
         </div><!-- end row for 2 columns -->
-        <div><!-- open row with (2) columns for project2 -->
+        <div class="row"><!-- open row with (2) columns for project2 -->
           <div><!-- open first column (image) -->
             <picture>
-              <source srcset="img/LAmag/lamag_hero pic@1.png" media=" (max-with:767px)">
+              <source srcset="img/LAmag/lamag_hero pic@1.png" media=" (max-width:767px)">
               <img src="img/LAmag/lamag_hero pic@2.png" alt="Digital Magazine">
             </picture>
           </div><!-- end first column -->
@@ -64,10 +64,10 @@
             <a href="#" class="button">Read more</a><!-- button -->
           </div><!-- end second column -->
         </div><!-- end row for 2 columns -->
-        <div><!-- open row with (2) columns for project3 -->
+        <div class="row"><!-- open row with (2) columns for project3 -->
           <div><!-- open first column (image) -->
             <picture>
-              <source srcset="img/gossipy/Gossipy_hero pic@1.png" media=" (max-with:767px)">
+              <source srcset="img/gossipy/Gossipy_hero pic@1.png" media=" (max-width:767px)">
               <img src="img/gossipy/Gossipy_hero pic@2.png" alt="Vocabulary App">
             </picture>
           </div><!-- end first column -->
@@ -84,17 +84,17 @@
     </div>
     </div>
   </main>
-  <footer id="contact">
-    <div>
+  <footer id="contact"><!-- start footer section -->
+    <div class="container"><!-- start container holding footer content -->
       <h2>Get in touch</h2>
       <p>
         Did I catch your attention? Let’s connect. Call: <a href="tel:+43664123456789">+43664123456789</a> Or send me an email
       </p>
-      <div>
+      <div><!-- start email me -->
         <a href="mailto:myname@papierkorb.me" class="button contact">Email me</a><!-- Email Button -->
-      </div>
-      <div>
-        <! -- Social Media Placeholder -->
+      </div><!-- end email me -->
+      <div class="social-media"><!-- start social media links>
+        <!-- Social Media Placeholder -->
           <a href=https://www.linkedin.com/in/magdalena-schindler-a89ab91b9/ target="_blank">
             <svg style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
             	.st0{fill:#4267B2;}
