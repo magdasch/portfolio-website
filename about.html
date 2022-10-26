@@ -12,12 +12,12 @@
 
 <body>
   <header>
-    <div>
+    <div class="container">
       <img class="logo" src="img/logo_150x150.png" alt="Magdalena Schindler">
       <nav>
         <ul class="navigation">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="olive.html">Work</a></li>
+          <li><a href="index.html"target=_blank">Home</a></li>
+          <li><a href="olive.html"target=_blank">Work</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -35,7 +35,7 @@
           <source srcset="img/About me@1.png" media=" (max-width:767px)">
           <img src="img/About me@2.png" alt="About me">
         </picture>
-        <div><!-- open row with (2) columns -->
+        <div id="work"><!-- open row with (2) columns in work section -->
             <div><!-- open first column -->
               <h2>My story</h2>
               <p>Due to my past career I profit from a variety of skills that I can use as a UX Researcher and Designer.
@@ -43,11 +43,11 @@
                 This led me via graphic design into the world of agencies, into project management and
                 workshop facilitation in the education sector, and finally back into design as a project
                 manager for web projects at the University of Graz.</p>
-              <a href="files/Magda Schindler_CV.pdf">Download Resume</a><!-- button -->
+              <a href="files/Magda Schindler_CV.pdf" class="button">Download Resume</a><!-- button -->
             </div><!-- close first column -->
             <div><!-- open second column -->
               <h3>Skills & Tools</h3>
-              <div><!-- open first inside column -->
+              <div class="col-md-6"><!-- open first inside column -->
                 <h4>Relevant Skills</h4>
                   <ul>
                     <li>UX Research</li>
@@ -69,7 +69,7 @@
                     <li>A/B Testing</li>
                     </ul>
               </div><!-- close first inside column -->
-                <div><!-- open second inside column -->
+                <div class="col-md-6"><!-- open second inside column -->
                 <h4>Tools I use</h4>
                   <ul>
                     <li>Figma</li>
