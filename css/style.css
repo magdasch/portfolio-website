@@ -27,6 +27,7 @@ h1,h2,h3,h4{
   font-family: PT Sans, sans-serif;
   text-align: center;
 }
+
 .headline-header-2{
     text-align: center;
 }
@@ -47,58 +48,74 @@ h4{
   font-size: 1em;
   font-weight: 700;
 }
+
 img{
   width: 100%;
 }
+
 a{
   color:#0D0D0D;
   text-decoration: none; /*no unterlining*/
 }
+
 a:visited{
   color: #0D0D0D;
 }
+
 a:hover,
 a:focus{
   color:#80A2BF;
   text-decoration: underline; /*underline when hovering over a link*/
 }
+
 a:active{
   color:#56738C;
 }
+
 .button{
-  display:inline-block;
+  display: inline-block;
   background-color: #56738C;
   color: white;
   font-weight: 400;
+  text-decoration: none;
   text-transform: uppercase;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #2E5170
+  border-bottom: 2px solid #2E5170;
+  transition: 0.2s opacity;
 }
+
 .button:hover{
   background-color: #80A2BF;
   color: #F8F8FF;
   text-decoration: none;
+  opacity: 0.8;
 }
+
 .button:active{
   color: #56738C;
 }
+
 .button.contact{
   background-color: transparent;
   color: #80A2BF;
   text-transform: uppercase;
   border: 2px solid #2E5170;
   margin-bottom: 10px;
+  transition: 0.2s opacity;
 }
+
 .button.contact:hover{
   background-color:#80A2BF;
   color:#F8F8FF;
+  font-size: 18px;
 }
 
 /* Layout styling*/
 .container {
   padding: 0 15px; /*0 px top and bottom, 15px left and right*/
 }
+
 .row{
   margin: 25px 0; /*25px top and bottom, 0 left and right*/
 }
@@ -116,7 +133,7 @@ a:active{
   text-align: center;
 }
 
-[class*="col-"]{
+[class*="col-"] {
   float: left;
   padding: 0 10px;
 }
@@ -169,10 +186,43 @@ nav > ul > li > a:hover{
   color: #80A2BF;
   text-decoration: none;
 }
+
 nav > ul > li > a:active{
   color: #56738C;
   text-decoration: none;
 }
+
+/* Top and Bottom borders go out */
+.topBotomBordersOut a:before, .topBotomBordersOut a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersOut a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersOut a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+/* End Top and Bottom borders go out */
 
 main{
   padding-top: 99px;
@@ -184,12 +234,55 @@ main{
   width: 100%;
   }
 
+#about{
+  padding: 160px 0 10px; /* top 160px, left&right 0px, bottom 10 px*/
+}
+
+#about-picture{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill:#edc655;}
+  50% {fill:#fcffad;}
+  100% {fill:#f76414;}
+}
+.sun{
+  animation-duration: 8s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front{
+  animation-duration: 30s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back{
+animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
 /*Medium devices (640px and larger)*/
 @media only screen and (min-width:640px){
 
 header {
   text-align: unset;
-  padding: 20px 0 13px;
+  padding: 20px 0 13px; /* top 20px, left & right 0px, bottom 13px*/
   font-size: 18px;
 }
 
@@ -206,9 +299,25 @@ nav {
   width: 50%;
 }
 
+#about h3 {margin-top:0;}
+
 }
 /*Large devices (1024px and larger)*/
 @media only screen and (min-width:1024px){
+
+.col-lg-7{
+  width: 58.33%;
+}
+
+.col-lg-5{
+  width: 41.66%;
+}
+
+.container{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 }
 /*XLarge devices (1440px and larger)*/
