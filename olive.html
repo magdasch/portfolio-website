@@ -8,19 +8,25 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel=stylesheet>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="with=device-with, initial-scale=1">
+    <script src="https://kit.fontawesome.com/925554752c.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <header>
       <div class="container"><!-- open container for nav -->
+        <div class="container"><!-- open container for toggle nav -->
+          <div class="navtoggle" id="myNavtoggle">
         <img class="logo" src="img/logo_150x150.png" alt="Magdalena Schindler">
         <nav>
           <ul class="navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
+      </div>
+    </div><!-- close container for toggle nav -->
       </div><!-- close container for nav -->
     </header>
     <main>
