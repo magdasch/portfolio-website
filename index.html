@@ -8,19 +8,25 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel=stylesheet>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/925554752c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="container topBotomBordersOut"><!-- open container for logo and animated nav -->
-      <img class="logo" src="img/logo_150x150.png" alt="Logo Magdalena Schindler">
+      <div class="container"><!-- open container for toggle nav -->
+        <div class="navtoggle" id="myNavtoggle">
+          <img class="logo" src="img/logo_150x150.png" alt="Logo Magdalena Schindler">
         <nav>
         <ul class="navigation">
           <li><a href="olive.html"target="_blank">Work</a></li>
           <li><a href="about.html"target="_blank">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li><!-- when a user clicks an the hamburger icon the browser should launch toggle -->
         </ul>
       </nav>
+    </div>
+  </div><!-- closes container for toggle nav -->
     </div><!-- close container for logo and animated nav -->
   </header>
   <main>
@@ -730,7 +736,7 @@ With this picture I am demonstrating my animation skills I've learnt in task 1.8
       </div>
     </div>
   </footer>
-  <script src="js/scripts.js">
-  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
