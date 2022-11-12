@@ -111,6 +111,12 @@ a:active{
   font-size: 18px;
 }
 
+.buttoncontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
 /* Layout styling*/
 .container {
   padding: 0 15px; /*0 px top and bottom, 15px left and right*/
@@ -142,12 +148,8 @@ a:active{
   text-align:center; /*Centers text*/
 }
 
-.social-media{
-    max-width: 40px;
-}
-
 .logo{
-  max-width: 150px;
+  max-width: 50px;
 }
 
 header {
@@ -167,7 +169,7 @@ nav > ul{
 
 
 nav > ul > li > a {
-  padding: 0 15 px;
+  padding: 0 15px;
   font-family: PT Sans, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -262,19 +264,23 @@ main{
 }
 #hero{
   background-color: #F8F8FF;
-  padding: 56px 0;
+  padding: 15px 0;
   display: inline-block;
   width: 100%;
   }
 
 #about{
-  padding: 160px 0 10px; /* top 160px, left&right 0px, bottom 10 px*/
+  padding: 30px 0 10px; /* top 30px, left&right 0px, bottom 10 px*/
 }
 
 #about-picture{
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+#projectintro{
+    padding: 30px 0 10px; /* top 160px, left&right 0px, bottom 10 px*/
 }
 
 @keyframes color-change {
@@ -296,7 +302,7 @@ main{
 }
 .cloud-front{
   animation-duration: 30s;
-  animation-name: color-change;
+  animation-name: cloud-move;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
@@ -310,23 +316,47 @@ main{
 animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+footer{
+  width: 100%;
+  background-color: #F8F8FF;
+}
+
+.contact{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.social-media{
+  max-width: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 0 5px;
+}
+
+.copyright{
+  text-align: center;
+  padding-bottom: 15px;
+}
+
 /*Medium devices (640px and larger)*/
 @media only screen and (min-width:641px){
 
-header {
+header{
   text-align: unset;
   padding: 20px 0 13px; /* top 20px, left & right 0px, bottom 13px*/
   font-size: 18px;
 }
 
 .logo{
-  max-width: 250px;
+  max-width: 150px;
 }
 
 nav {
   width: auto;
   float: right;
-  margin-top: 130px;
+  margin-top: 50px;
   }
 
   nav > ul {
