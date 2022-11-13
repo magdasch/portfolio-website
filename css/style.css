@@ -160,6 +160,10 @@ header {
   box-shadow:7px 7px 5px 0px rgba(0, 0, 0, 0.16);
 }
 
+nav {
+  display: inline-block;
+  width: 100%;
+}
 
 nav > ul{
   list-style-type: none;
@@ -193,7 +197,7 @@ nav > ul > li > a {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 65px;
+  top:10px;
   font-size: 20px;
   padding-right: 5px;
 }
@@ -260,7 +264,7 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
 /* End Top and Bottom borders go out */
 
 main{
-  padding-top: 190px;
+  padding-top: 130px;
 }
 #hero{
   background-color: #F8F8FF;
@@ -349,6 +353,7 @@ header{
   font-size: 18px;
 }
 
+
 .logo{
   max-width: 150px;
 }
@@ -374,6 +379,7 @@ nav > ul > li{
   .navtoggle li:last-child {
     display: none;
 }
+
 
 #hero {
   font-size: 18px;
