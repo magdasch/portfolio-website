@@ -16,11 +16,11 @@
     <div class="container">
       <div class="container"><!-- open container for toggle nav -->
         <div class="navtoggle" id="myNavtoggle">
-      <img class="logo" src="img/logo_150x150.png" alt="Magdalena Schindler">
+        <a href="index.html"> <img class="logo" src="img/logo_transparent_150x150.png" alt="Logo Magdalena Schindler"></a>
       <nav>
         <ul class="navigation">
-          <li><a href="index.html">Home</a></li>
           <li><a href="olive.html">Work</a></li>
+          <li><a href="about.html">About me</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
@@ -31,24 +31,26 @@
   </header>
   <main>
     <div id="about"><!-- open About section -->
-      <h1 class="headline-header">About</h1>
-      <picture>
-        <source srcset="img/About me@1.png" media=" (max-width:767px)">
-        <img src="img/About me@2.png" alt="About me">
-      </picture>
-    </div><!-- close About section -->
-    <div class="container"><!-- open container for content -->
-    <div id="work"><!-- open section work -->
-      <h2>My story</h2>
-      <p>Due to my past career I profit from a variety of skills that I can use as a UX Researcher and Designer.
-      With my degree from the FH Salzburg, I laid the foundation for my winding design career.
-      This led me via graphic design into the world of agencies, into project management and
-      workshop facilitation in the education sector, and finally back into design as a project
-      manager for web projects at the University of Graz.</p>
-      <div class="buttoncontainer"><!-- open container to center the button -->
-      <a href="files/Magda Schindler_CV.pdf" class="button">Download Resume</a><!-- button -->
-      </div><!-- close container to center the button -->
+      <div class="container"><!-- open container for content -->
+        <h2>I aim to improve the digital world</h2>
+        <h3>from the user's point of view by using my <b>solution-oriented approach</b> and my <b>user-centered mindset</b>. My superpower is my empathy, which allows me to identify deep-seated reasons behind objections.</h3>
+      <div class="row"><!-- open row with (2) columns for project1 -->
+        <div class="col-md-6 col-lg-7"><!-- open first column (image) -->
+          <picture>
+            <source srcset="img/About me@1.png" media=" (max-width:767px)">
+              <img src="img/About me@2.png" alt="About me">
+          </picture>
+        </div><!-- end first column -->
+        <div class="col-md-6 col-lg-5"><!--open second column (for text) -->
+          <h3>My story</h3>
+          <p>Due to my past career I profit from a variety of skills that I can use as a UX Researcher and Designer.
+            With my design degree from the University of Applied Sciences Salzburg, I laid the foundation for my winding design career.
+            This led me from graphic design into the world of agencies, to project management and workshop facilitation in education, and finally back to design as a project manager for web projects at the University of Graz.</p>
+            <a href="files/Magda Schindler_CV.pdf" target="_blank" class="button">Download Resume</a><!-- button -->
+          </div><!-- end second column (for text -->
+        </div><!-- end row for (2) columns for project1 -->
       <h3>Skills & Tools</h3>
+      <div class="row"><!-- open row with (2) columns for Skills -->
         <div class="col-md-6"><!-- open first column -->
           <h4>Relevant Skills</h4>
             <ul>
@@ -93,8 +95,9 @@
                 <li>Canva</li>
               </ul>
           </div><!-- close second column -->
-      </div><!-- close section work -->
-    </div><!-- close container for content -->
+        </div><!-- end row for (2) columns for Skills-->
+      </div><!-- close container for content -->
+    </div><!-- close About section -->
   </main>
   <footer id="contact"><!-- start footer section -->
     <div class="contact"><!-- start container holding footer text -->
